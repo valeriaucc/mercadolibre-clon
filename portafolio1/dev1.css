@@ -1,0 +1,209 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#020617;
+}
+
+.logo{
+font-size:24px;
+}
+
+.logo span{
+color:#38bdf8;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 8%;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+margin:20px 0;
+line-height:1.6;
+}
+
+.hero-text button{
+padding:12px 25px;
+border:none;
+background:#38bdf8;
+color:white;
+font-weight:bold;
+cursor:pointer;
+border-radius:8px;
+}
+
+.hero-img img{
+width:300px;
+border-radius:50%;
+box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+
+
+/* ABOUT */
+
+.about{
+padding:80px 8%;
+text-align:center;
+max-width:800px;
+margin:auto;
+}
+
+.about h2{
+margin-bottom:30px;
+font-size:32px;
+}
+
+
+
+/* SKILLS */
+
+.skills{
+padding:80px 8%;
+}
+
+.skills-container{
+max-width:700px;
+margin:auto;
+}
+
+.skill{
+margin-bottom:25px;
+}
+
+.bar{
+height:10px;
+background:#1e293b;
+border-radius:5px;
+overflow:hidden;
+}
+
+.bar span{
+display:block;
+height:100%;
+background:#38bdf8;
+}
+
+
+
+/* PROJECTS */
+
+.projects{
+padding:80px 8%;
+text-align:center;
+}
+
+.projects-container{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+width:260px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+
+
+/* CONTACT */
+
+.contact{
+padding:80px 8%;
+text-align:center;
+}
+
+form{
+display:flex;
+flex-direction:column;
+max-width:400px;
+margin:auto;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border:none;
+border-radius:8px;
+}
+
+button{
+background:#38bdf8;
+padding:12px;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:40px;
+}

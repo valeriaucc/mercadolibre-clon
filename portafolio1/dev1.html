@@ -1,11 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio | Valeria Góngora</title>
+<link rel="stylesheet" href="dev1.css">
+<script defer src="dev1.js"></script>
 </head>
+
 <body>
-    
+
+<header>
+<nav class="navbar">
+<h2 class="logo">Valeria<span>Dev</span></h2>
+
+<ul class="nav-links">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#about">Sobre mí</a></li>
+<li><a href="#skills">Habilidades</a></li>
+<li><a href="#projects">Proyectos</a></li>
+<li><a href="#contact">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+
+<section id="inicio" class="hero">
+
+<div class="hero-text">
+<h1>Hola, soy <span>Valeria Estefanía</span></h1>
+<h3>Estudiante de Ingeniería de Software</h3>
+
+<p>
+Apasionada por la tecnología, el desarrollo de software y la creación de soluciones digitales.
+Creo firmemente que el mejor código nace del trabajo en equipo y de la curiosidad constante.
+</p>
+
+<button onclick="scrollToSection('contact')">Contactarme</button>
+</div>
+
+<div class="hero-img">
+<img src="image/image.png" alt="Valeria">
+</div>
+
+</section>
+
+
+
+<section id="about" class="about">
+
+<h2>Sobre mí</h2>
+
+<p>
+Soy <b>Valeria Estefanía Góngora Torres</b>, estudiante de Ingeniería de Software con una mente curiosa y una fuerte vocación por la tecnología.
+</p>
+
+<p>
+Me adapto rápidamente a nuevos entornos, aprendo con facilidad y disfruto trabajar en equipo para resolver problemas complejos.
+</p>
+
+<p>
+Aunque mi experiencia profesional está en crecimiento, mis bases en programación, lógica computacional y desarrollo web me permiten aportar valor desde el primer momento.
+</p>
+
+<p>
+Actualmente me enfoco en mejorar mis habilidades en desarrollo web, interfaces modernas y buenas prácticas de programación.
+</p>
+
+</section>
+
+
+
+<section id="skills" class="skills">
+
+<h2>Habilidades</h2>
+
+<div class="skills-container">
+
+<div class="skill">
+<h3>HTML</h3>
+<div class="bar"><span style="width:90%"></span></div>
+</div>
+
+<div class="skill">
+<h3>CSS</h3>
+<div class="bar"><span style="width:85%"></span></div>
+</div>
+
+<div class="skill">
+<h3>JavaScript</h3>
+<div class="bar"><span style="width:75%"></span></div>
+</div>
+
+<div class="skill">
+<h3>Trabajo en equipo</h3>
+<div class="bar"><span style="width:95%"></span></div>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="projects" class="projects">
+
+<h2>Proyectos</h2>
+
+<div class="projects-container">
+
+<div class="card">
+<h3>Sistema de Gestión</h3>
+<p>
+Aplicación web diseñada para administrar información de usuarios y procesos internos de una organización.
+</p>
+</div>
+
+<div class="card">
+<h3>Portafolio Web</h3>
+<p>
+Desarrollo de un portafolio profesional con diseño moderno, animaciones y estructura optimizada.
+</p>
+</div>
+
+<div class="card">
+<h3>App de Tareas</h3>
+<p>
+Aplicación simple para gestionar tareas diarias utilizando JavaScript y almacenamiento local.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="contact">
+
+<h2>Contacto</h2>
+
+<p>Si deseas trabajar conmigo o tienes alguna oportunidad, ¡me encantaría escucharte!</p>
+
+<form>
+
+<input type="text" placeholder="Tu nombre" required>
+<input type="email" placeholder="Tu correo" required>
+<textarea placeholder="Tu mensaje"></textarea>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Valeria Estefanía Góngora Torres</p>
+
+</footer>
+
 </body>
 </html>
