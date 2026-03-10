@@ -2,62 +2,87 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-    <title>Portafolio - Vanessa Mena</title>
+    <title>Portafolio | Vanessa Mena</title>
 
     <link rel="stylesheet" href="dev2.css">
-
 </head>
 
 <body>
 
-    <section class="portfolio">
+<header class="header">
+    <h1>Portafolio Profesional</h1>
+</header>
 
-        <h1>Portafolio de Desarrolladora</h1>
 
-        <div class="card">
+<section class="portfolio">
 
-            <img src="image/dev2.jpg" alt="Vanessa Mena">
+    <div class="card">
 
-            <h2>Vanessa Mena</h2>
+        <img src="dev2.jpg" alt="Vanessa Mena">
 
-            <p>
-                Ingeniera de software apasionada por el desarrollo web,
-                interfaces modernas y soluciones tecnológicas innovadoras.
-            </p>
+        <h2>Vanessa Mena</h2>
 
-            <h3>Servicios</h3>
+        <p class="description">
+            Ingeniera de software apasionada por el desarrollo web, el diseño de interfaces modernas 
+            y la creación de soluciones digitales eficientes. Me gusta construir experiencias web 
+            intuitivas, accesibles y visualmente atractivas.
+        </p>
 
-            <ul>
-                <li>Desarrollo Web</li>
-                <li>Diseño de Interfaces</li>
-                <li>Aplicaciones Frontend</li>
-            </ul>
+        <div class="info">
 
-            <h3>Tecnologías</h3>
+            <div class="block">
+                <h3>Servicios</h3>
 
-            <div class="tech">
+                <ul>
+                    <li>Desarrollo Web Frontend</li>
+                    <li>Diseño de Interfaces UI</li>
+                    <li>Prototipos Web</li>
+                    <li>Aplicaciones JavaScript</li>
+                </ul>
+            </div>
 
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Git</span>
+
+            <div class="block">
+                <h3>Tecnologías</h3>
+
+                <div class="tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                </div>
 
             </div>
 
-            <button onclick="mostrarMensaje()">
-                Ver más
-            </button>
+        </div>
 
-            <p id="mensaje"></p>
+
+        <div class="buttons">
+
+            <a class="btn github" href="https://github.com/vanessaucc" target="_blank">
+                Ver mi GitHub
+            </a>
+
+            <button class="btn contact" onclick="mostrarMensaje()">
+                Contactar
+            </button>
 
         </div>
 
-    </section>
+        <p id="mensaje"></p>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <p>© 2026 Vanessa Mena | Portafolio académico</p>
+</footer>
 
 <script src="dev2.js"></script>
 
 </body>
-
 </html>
