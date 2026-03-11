@@ -2,64 +2,68 @@
 <html lang="es">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portafolio | Sebastian</title>
+<title>Sebastian | Software Engineer</title>
 
-<link rel="stylesheet" href="dev3.css">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header class="header">
+<div class="crt"></div>
 
-<div class="container">
+<header class="navbar">
+<h1 class="logo">SEBASTIAN_DEV</h1>
 
-<h1>Sebastian</h1>
-
-<p>Ingeniero de Software | Desarrollador Web</p>
-
-</div>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Stack</a>
+<a href="#contact">Contact</a>
+</nav>
 
 </header>
 
+<section class="hero">
 
-<section class="profile container">
+<div class="hero-text">
 
-<img src="image/profile.jpg" alt="Foto perfil">
+<h2>Hello, World!</h2>
+
+<p>
+Soy estudiante de Ingeniería de Software apasionado por el desarrollo web,
+la creación de interfaces modernas y la construcción de soluciones eficientes.
+</p>
+
+<button class="pixel-btn">Ver Proyectos</button>
+
+</div>
+
+<div class="hero-avatar">
+<img src="avatar.png" alt="pixel avatar">
+</div>
+
+</section>
+
+<section id="about" class="section">
 
 <h2>Sobre mí</h2>
 
 <p>
-Soy desarrollador enfocado en la creación de aplicaciones web modernas
-utilizando HTML, CSS y JavaScript. Me apasiona el desarrollo de
-interfaces intuitivas y experiencias de usuario eficientes.
+Tengo experiencia desarrollando proyectos individuales y colaborativos
+utilizando tecnologías modernas como JavaScript, React y herramientas
+de control de versiones como Git y GitHub.
 </p>
 
 </section>
 
-
-<section class="skills container">
-
-<h2>Tecnologías</h2>
-
-<div class="skills-grid">
-
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-<span>Git</span>
-<span>GitHub</span>
-
-</div>
-
-</section>
-
-
-<section class="projects container">
+<section id="projects" class="section">
 
 <h2>Proyectos</h2>
 
@@ -67,22 +71,53 @@ interfaces intuitivas y experiencias de usuario eficientes.
 
 <div class="project-card">
 
-<h3>Clon MercadoLibre</h3>
+<h3>🎮 Interfaz de Videojuego</h3>
 
 <p>
-Proyecto académico donde replicamos la landing page de MercadoLibre
-utilizando HTML, CSS y trabajo colaborativo con Git.
+Simulación de interfaz de videojuego con menú,
+pantalla de opciones y créditos.
 </p>
+
+<span>Next.js / React / Tailwind</span>
 
 </div>
 
 <div class="project-card">
 
-<h3>Sistema de Inventario</h3>
+<h3>🌐 Portafolio Web</h3>
 
 <p>
-Aplicación web para gestión de inventario desarrollada con JavaScript.
+Sitio web para mostrar proyectos y habilidades
+como desarrollador.
 </p>
+
+<span>HTML / CSS / JavaScript</span>
+
+</div>
+
+<div class="project-card">
+
+<h3>🛒 Sistema de Productos</h3>
+
+<p>
+Proyecto colaborativo utilizando GitFlow
+y trabajo en equipo.
+</p>
+
+<span>Git / GitHub / JS</span>
+
+</div>
+
+<div class="project-card">
+
+<h3>📄 Procesamiento de Documentos</h3>
+
+<p>
+Aplicación Java aplicando el patrón
+Factory Method.
+</p>
+
+<span>Java / OOP</span>
 
 </div>
 
@@ -90,31 +125,47 @@ Aplicación web para gestión de inventario desarrollada con JavaScript.
 
 </section>
 
+<section id="skills" class="section">
 
-<section class="contact container">
+<h2>Stack Tecnológico</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Next.js</div>
+<div class="skill">Git</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="section">
 
 <h2>Contacto</h2>
 
-<p>Email: sebastian@email.com</p>
-
 <p>
-GitHub:
-<a href="https://github.com/">https://github.com/</a>
+Si quieres colaborar conmigo o trabajar en un proyecto,
+puedes encontrarme en:
 </p>
 
-<button id="btnContact">Enviar mensaje</button>
+<div class="contact-links">
+
+<a href="#">GitHub</a>
+<a href="#">LinkedIn</a>
+<a href="#">Email</a>
+
+</div>
 
 </section>
 
-
 <footer>
 
-<p>© 2026 Sebastian - Portafolio</p>
+<p>© 2026 Sebastian | Software Engineer</p>
 
 </footer>
-
-
-<script src="dev3.js"></script>
 
 </body>
 </html>
