@@ -1,153 +1,199 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-background:#f4f6f9;
-color:#333;
-text-align:center;
+body {
+    /* Fondo oscuro profundo y texto gris claro para contraste suave */
+    background: #0f1014;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 1.6;
 }
 
-/* HEADER */
-
-header{
-background:#111;
-color:white;
-padding:30px;
+/* Tipografía elegante para todos los títulos */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
-header h1{
-font-size:32px;
+/* --- HEADER --- */
+header {
+    background: transparent;
+    padding: 40px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Línea sutil divisoria */
 }
 
-header p{
-opacity:0.8;
-margin-top:5px;
+header h1 {
+    font-size: 38px;
+    color: #ffffff;
 }
 
-nav{
-margin-top:15px;
+header p {
+    color: #a3a3a3;
+    font-size: 13px;
+    text-transform: uppercase; /* Letras mayúsculas para un look más editorial */
+    letter-spacing: 3px;
+    margin-top: 5px;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-size:14px;
-transition:0.3s;
+nav {
+    margin-top: 25px;
 }
 
-nav a:hover{
-color:#ffd000;
+nav a {
+    color: #a3a3a3;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
 }
 
-/* PERFIL */
-
-.perfil{
-margin-top:40px;
-padding:20px;
+nav a:hover {
+    color: #d4af37; /* Tono Dorado Elegante */
 }
 
-.perfil img{
-width:160px;
-height:160px;
-border-radius:50%;
-object-fit:cover;
-border:5px solid #ffd000;
+/* --- PERFIL --- */
+.perfil {
+    margin-top: 60px;
+    padding: 20px;
 }
 
-.perfil h2{
-margin-top:15px;
-font-size:28px;
+.perfil img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Borde dorado separado de la imagen para efecto "anillo" */
+    border: 2px solid #d4af37;
+    padding: 6px; 
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
 }
 
-.perfil p{
-max-width:500px;
-margin:15px auto;
-color:#555;
+.perfil h2 {
+    margin-top: 25px;
+    font-size: 34px;
+    color: #ffffff;
 }
 
-.btn{
-margin-top:10px;
-padding:10px 20px;
-border:none;
-background:#ffd000;
-font-weight:600;
-cursor:pointer;
-border-radius:5px;
-transition:0.3s;
+.perfil p {
+    max-width: 550px;
+    margin: 20px auto;
+    color: #a3a3a3;
+    font-weight: 300;
 }
 
-.btn:hover{
-transform:scale(1.05);
-background:#ffc400;
+/* Botón estilo "Ghost" (Transparente con borde) */
+.btn {
+    margin-top: 25px;
+    padding: 12px 35px;
+    border: 1px solid #d4af37;
+    background: transparent;
+    color: #d4af37;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 40px; /* Bordes más redondeados */
+    transition: 0.4s ease;
 }
 
-/* PROYECTOS */
-
-.proyectos{
-margin-top:50px;
-padding:20px;
+.btn:hover {
+    background: #d4af37;
+    color: #0f1014;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
 }
 
-.proyectos h2{
-margin-bottom:20px;
-font-size:28px;
+/* --- PROYECTOS --- */
+.proyectos {
+    margin-top: 70px;
+    padding: 40px 20px;
 }
 
-.contenedor-proyectos{
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
+.proyectos h2 {
+    margin-bottom: 50px;
+    font-size: 34px;
+    color: #ffffff;
 }
 
-.card{
-background:white;
-width:260px;
-padding:25px;
-border-radius:12px;
-box-shadow:0 10px 20px rgba(0,0,0,0.08);
-transition:0.3s;
+.contenedor-proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
 }
 
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 15px 30px rgba(0,0,0,0.15);
+.card {
+    background: #16181d; /* Un tono ligeramente más claro que el fondo */
+    width: 290px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
-.card h3{
-margin-bottom:10px;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border-color: rgba(212, 175, 55, 0.3); /* El borde brilla ligeramente en dorado al pasar el mouse */
 }
 
-/* FOOTER */
-
-footer{
-margin-top:60px;
-background:#111;
-color:white;
-padding:30px;
+.card h3 {
+    margin-bottom: 15px;
+    color: #d4af37; /* Títulos de proyectos en dorado */
+    font-size: 22px;
 }
 
-.redes{
-margin:15px 0;
+.card p {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 300;
 }
 
-.redes a{
-color:white;
-text-decoration:none;
-margin:0 10px;
-transition:0.3s;
+/* --- FOOTER --- */
+footer {
+    margin-top: 90px;
+    background: #0a0a0c;
+    padding: 50px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.redes a:hover{
-color:#ffd000;
+footer p {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #ffffff;
 }
 
-.copy{
-opacity:0.7;
-font-size:14px;
+.redes {
+    margin: 25px 0;
+}
+
+.redes a {
+    color: #a3a3a3;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease;
+}
+
+.redes a:hover {
+    color: #d4af37;
+}
+
+.copy {
+    opacity: 0.5;
+    font-size: 12px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
 }
